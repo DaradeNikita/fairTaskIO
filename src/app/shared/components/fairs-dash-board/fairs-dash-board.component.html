@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+          
+            <app-fairs-card [fairsArray]="sendFairsData"
+            (sendId)="onIdget($event)"
+            
+            ></app-fairs-card>
+        </div>
+        <div class="col-md-8">
+            <app-fair-details [getFairsDetails]="sendFairsData" 
+            [getFairsId]="fairsId"
+            ></app-fair-details>
+        </div>
+    </div>
+</div>

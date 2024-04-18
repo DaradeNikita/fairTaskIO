@@ -1,0 +1,37 @@
+.banner{
+    height : 250px;
+    position : relative;
+    .bannerImg{
+        position: absolute;
+        top :0;
+        left :0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.color{
+    color : #c0bbbc;
+    .pri-heading{
+        margin-bottom: 25px;
+    }
+}
+.fair-school {
+    color: #fff;
+    font-size: 1.25rem;
+    background-color: #dddcdc;
+    padding: 10px 30px;
+    display: block;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.text{
+    color :#c0bbbc
+}
+.date{
+    color : #156E72
+    }
+
+.editZone{
+    margin-left: 180px;
+}

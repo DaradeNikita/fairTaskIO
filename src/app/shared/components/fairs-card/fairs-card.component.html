@@ -1,0 +1,38 @@
+
+
+<!-- <h3 class="fairsTitle text-light">Fairs</h3> -->
+
+<!-- <div class="container"> -->
+    <!-- <div class="row">
+        <div class="col-md-4"> -->
+            <div class="card mb-4 fairCard active" 
+          
+          *ngFor="let fairs of fairsArray"
+          [ngClass]="{
+            active : fairs.fairId === selectedFairId
+        }"
+          
+          (click)="onFairSelected(fairs.fairId)"
+        >
+                <h3 class="p-2">{{fairs.fairName}}</h3>
+                  <div class="card-body">
+                    <div class="typeAndDate">
+                     <div class="row">
+                      <div class="col-md-6">
+                        <p>Event Type : <strong class="color">{{fairs.type}}</strong></p> 
+                        <p>Date : <strong class="color">{{fairs.startDate | date}}</strong></p>
+                      </div>
+                      <div class="col-md-6">
+                        <p>School :<strong class="color">{{fairs.numberOfSchoolsRegistered}}</strong></p>
+                        <p>Job:<strong class="color">{{fairs.numberOfUsersRegistered}}</strong></p>
+                      </div>
+                     </div>
+                      
+                      </div>
+                  </div>
+                </div>
+                <!-- </div>
+               
+            </div> -->
+       
+<!-- </div> -->

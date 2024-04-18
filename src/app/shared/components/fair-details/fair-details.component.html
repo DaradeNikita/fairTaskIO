@@ -1,0 +1,39 @@
+
+<div class="card"
+
+>
+    <div class="card-body">
+      
+      <div class="banner">
+        <img [src]="selectedFair.bannerUrl" class="bannerImg" alt="">
+     </div>
+      <div class="d-flex my-4">
+         <span class="fair-school mr-3"><i class="fa-solid fa-school mr-2"></i>{{selectedFair.numberOfSchoolsRegistered}}schools Attending
+         </span> 
+         <span class="fair-school text-capitalize"><i class="fa-solid fa-user-doctor mr-2"></i>job at schools Attending
+         </span> 
+     </div>
+     <div class="row">
+         <div class="col-md-6">
+             <strong><i class="fa-solid fa-location-dot fa-3x mb-4"></i></strong>
+             <h4 class="text-capitalize text">Event Date And Time</h4>
+             <h6 class="mb-4"><strong class="date">{{selectedFair.startDate | date :('long')}}</strong> </h6>
+             <h6><strong class="date">{{selectedFair.endDate| date :('long')}}</strong> </h6>
+         </div>
+         <div class="col-md-6">
+             <h5 class="mb-3"><strong>Selected Time Zone</strong></h5>
+             <h6 class="mb-4"><strong class="color">{{selectedFair.startDate | date :('long')}}(India Standard Time)</strong> </h6>
+             <hr>
+             <h5 class="mb -3"><strong>Other Time Zone</strong></h5>
+             <h6 class="editZone"><strong class="date">Edit Time Zone</strong></h6>
+          </div>
+     </div>
+  <hr>
+   <div class="color">
+     <h3 class="text-bold pri-heading">Description</h3>
+     <h4 class="text-bold">Candidate Description</h4>
+   </div>
+   <p [innerHTML]="selectedFair.candidateDescription">
+  </p>
+    </div>
+  </div>
